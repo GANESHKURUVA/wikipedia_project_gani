@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikipedia</title>
+    <style>
+        img{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <img src="https://quillandpad.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-28-at-14.08.58-1030x776.png" alt="" srcset="">
+    
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+        <label for="search">Search</label>
+        <input id="search" name="search" type="text"> <button type="submit" value="submit">Search</button>
+    </form>
+   
+</center>
+<span> 
+    
+    {% for x in data %}
+        {{ data }}
+    {% endfor %}
+</span>
+</body>
+</html>
